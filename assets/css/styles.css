@@ -689,6 +689,7 @@ footer ul li a:hover {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 15px;
+    height: 124px;
 }
 .bl-form-group label {
     display: block;

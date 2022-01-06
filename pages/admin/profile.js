@@ -83,7 +83,7 @@ function Dashboard() {
                             </div>
                             <div className="form-group bl-form-group">
                                 <label htmlFor="">Annotation text:</label>
-                                <textarea type="text" placeholder="It is a tax-free intra-Community supply. Zero-rated intra-EU sale." rows="8" className="bl-textarea-control" />
+                                <textarea type="text" placeholder="It is a tax-free intra-Community supply. Zero-rated intra-EU sale." className="bl-textarea-control" />
                             </div>
 
                             <div className="form-group bl-form-group">
