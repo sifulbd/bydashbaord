@@ -157,10 +157,15 @@ export default function InvoiceTableSort(props) {
                                     <div className="product-description">
                                         <h4>{row.product}</h4>
                                         <p>{row.productDate} </p>
-                                        <p className="pending-color bl-tracking-on-mobile">
-                                            {" "}
-                                            <i className="fa fa-clock-o"></i> {row.pod}
-                                        </p>
+                                        {row.pod === "Delivered" ? (
+                                            <p className="success-color bl-tracking-on-mobile">
+                                                <i className="fa fa-check"></i> {row.pod}
+                                            </p>
+                                        ) : (
+                                            <p className="pending-color bl-tracking-on-mobile">
+                                                <i className="fa fa-clock-o"></i> {row.pod}
+                                            </p>
+                                        )}
                                     </div>
                                 </div>
                             </TableCell>

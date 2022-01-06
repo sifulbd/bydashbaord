@@ -1276,6 +1276,9 @@ footer ul li a:hover {
         color: #da9c24 !important;
         margin-top: 6px !important;
     }
+    .success-color.bl-tracking-on-mobile {
+        color: #04d300 !important;
+    }
     .blnotification {
         border: 1px solid #3a3a3a !important;
         width: 90% !important;

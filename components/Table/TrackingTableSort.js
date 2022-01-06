@@ -156,10 +156,16 @@ export default function TrackingTableSort(props) {
                                     <div className="product-description">
                                         <h4>{row.product}</h4>
                                         <p>{row.productDate} </p>
-                                        <p className="pending-color bl-tracking-on-mobile">
-                                            {" "}
-                                            <i className="fa fa-clock-o"></i> {row.tracking}
-                                        </p>
+
+                                        {row.pod === "Delivered" ? (
+                                            <p className="success-color bl-tracking-on-mobile">
+                                                <i className="fa fa-check"></i> {row.tracking}
+                                            </p>
+                                        ) : (
+                                            <p className="pending-color bl-tracking-on-mobile">
+                                                <i className="fa fa-clock-o"></i> {row.tracking}
+                                            </p>
+                                        )}
                                     </div>
                                 </div>
                             </TableCell>
