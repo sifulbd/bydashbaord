@@ -10,6 +10,7 @@ import man from "../../assets/img/man.png";
 import { FileUploader } from "react-drag-drop-files";
 import { FaSun } from "react-icons/fa";
 import { Button, FormControl, InputLabel, NativeSelect } from "@mui/material";
+import { Input } from "@material-ui/core";
 
 const fileTypes = ["PNG"];
 
@@ -35,7 +36,7 @@ function Dashboard() {
                                             name: "age",
                                             id: "uncontrolled-native",
                                         }}
-                                        className="bl-form-control"
+                                        className="bl-form-control control-select"
                                     >
                                         <option value={1}>xxxx-mm-year</option>
                                         <option value={20}>Invoice numbering sequence 2</option>
@@ -48,6 +49,7 @@ function Dashboard() {
                                 <label htmlFor="">Payment:</label>
                                 <input type="text" placeholder="Bank Transfer" className="bl-form-control" />
                             </div>
+
                             <div className="form-group bl-form-group">
                                 <label htmlFor="">Bank Name:</label>
                                 <input type="text" placeholder="Sparkasse" className="bl-form-control" />
@@ -71,7 +73,7 @@ function Dashboard() {
                                             name: "age",
                                             id: "uncontrolled-native",
                                         }}
-                                        className="bl-form-control"
+                                        className="bl-form-control control-select"
                                     >
                                         <option value={2}>Germany</option>
                                         <option value={20}>France</option>
